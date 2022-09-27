@@ -37,29 +37,8 @@ cp .env.example .env
     php artisan key:generate
 ```
 
-# 3. database
-
-1. create a database your side
-2. open .env file and set the database configuration like following
+## run the application
 
 ```
-DB_DATABASE=YOUR-DATABASE-NAME
-DB_USERNAME=YOUR-DATABASE-USERNAME
-DB_PASSWORD=YOUR-DATABASE-PASSWORD
-```
-
-you can also change the `db_connection` , ` db_host` or ` db_port` as desigered
-
-## after finishing up with database
-
-```
-php artisan config:cache
-```
-
-# 4. run the application
-
-you can simply run the application via command line
-
-```
-php artisan serve
+ ./vendor/bin/sail up
 ```
